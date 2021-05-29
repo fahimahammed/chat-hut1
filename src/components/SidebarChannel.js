@@ -23,7 +23,6 @@ function SidebarChannel({ id, channelName }) {
         <span className="sidebarChannel-hash">#</span>
         {channelName}
       </h4>
-      <p>hello</p>
     </div>
   );
 }
