@@ -70,7 +70,7 @@ function Sidebar() {
           ))}
         </div>
       </div>
-
+      {/* additional */}
       {/* <div className="sidebar-voice">
         <SignalCellularAlt className="sidebar-voiceIcon" fontSize="large" />
 
