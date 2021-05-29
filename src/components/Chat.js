@@ -26,7 +26,7 @@ const Chat = () => {
   useEffect(() => {
     if (channelId) {
       db.collection('channels')
-        .doc(channelId)
+        doc(channelId)
         .collection('messages')
         .orderBy('timestamp', 'desc')
         .onSnapshot((snapshot) => {

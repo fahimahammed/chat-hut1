@@ -13,7 +13,7 @@ const SidebarChannel = ({ id, channelName }) => {
       onClick={() =>
         dispatch(
           setChannelInfo({
-            channelId: id,
+            channelId id,
             channelName,
           })
         )
