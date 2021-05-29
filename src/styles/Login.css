@@ -1,0 +1,32 @@
+.login {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+.app-title{
+  text-align: center;
+}
+
+.app-name-style{
+  color: #e65d0e;
+}
+
+.login > button {
+  width: 300px;
+  background-color: #e65d0e;
+  color: #eff2f5;
+  font-weight: 800;
+}
+
+.login > button:hover {
+  background-color: #eff2f5;
+  color: #e65d0e;
+}
+
+.login > div > img {
+  object-fit: contain;
+  height: 150px;
+
+}

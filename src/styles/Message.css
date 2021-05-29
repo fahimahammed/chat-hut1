@@ -1,0 +1,24 @@
+.message {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  color: rgb(8, 8, 8);
+  
+}
+
+.message-style{
+  background-color: rgb(54, 53, 59);
+  padding: 1rem;
+  border-radius: 10px;
+  color: white;
+}
+
+.message__info {
+  margin-left: 20px;
+}
+
+.message__timestamp {
+  color: gray;
+  margin-left: 20px;
+  font-size: x-small;
+}
