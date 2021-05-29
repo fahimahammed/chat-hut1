@@ -3,14 +3,14 @@ import { Button } from '@material-ui/core';
 import { auth, provider } from '../app/firebase';
 import '../styles/Login.css';
 
-function Login() {
+const Login = () => {
   const signIn = () => {
     auth.signInWithPopup(provider).catch((error) => alert(error.message));
   };
 
   return (
     <div className="login">
-      <div className="login__logo">
+      <div>
         <img
           src="https://images.vexels.com/media/users/3/139911/isolated/preview/1afb4038427b2bd8edd275940aea269d-chat-service-icon-by-vexels.png"
           alt=""

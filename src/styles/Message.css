@@ -13,11 +13,11 @@
   color: white;
 }
 
-.message__info {
+.message-info {
   margin-left: 20px;
 }
 
-.message__timestamp {
+.message-timestamp {
   color: gray;
   margin-left: 20px;
   font-size: x-small;

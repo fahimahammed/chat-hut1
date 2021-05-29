@@ -4,7 +4,7 @@ import '../styles/SidebarChannel.css';
 
 import { setChannelInfo } from '../slice/appSlice';
 
-function SidebarChannel({ id, channelName }) {
+const SidebarChannel = ({ id, channelName }) => {
   const dispatch = useDispatch();
 
   return (

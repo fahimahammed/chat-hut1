@@ -16,7 +16,7 @@ import db from '../app/firebase';
 import { selectUser } from '../slice/userSlice';
 import { selectChannelId, selectChannelName } from '../slice/appSlice';
 
-function Chat() {
+const Chat = () => {
   const user = useSelector(selectUser);
   const channelId = useSelector(selectChannelId);
   const channelName = useSelector(selectChannelName);

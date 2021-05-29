@@ -24,9 +24,11 @@ function App() {
             displayName: authUser.displayName,
           })
         );
+
       } else {
         dispatch(logout());
       }
+      
     });
   }, [dispatch]);
 

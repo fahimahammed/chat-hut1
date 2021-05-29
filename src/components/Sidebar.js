@@ -18,7 +18,7 @@ import SidebarChannel from '../components/SidebarChannel';
 import db, { auth } from '../app/firebase';
 import { selectUser } from '../slice/userSlice';
 
-function Sidebar() {
+const Sidebar = () => {
   const user = useSelector(selectUser);
   const [channels, setChannels] = useState([]);
 

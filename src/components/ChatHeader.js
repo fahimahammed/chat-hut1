@@ -9,7 +9,7 @@ import {
 } from '@material-ui/icons';
 import '../styles/ChatHeader.css';
 
-function ChatHeader({ channelName }) {
+const ChatHeader = ({ channelName }) => {
   return (
     <div className="chatHeader">
       <div className="chatHeader__left">
