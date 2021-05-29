@@ -1,1 +1,2 @@
-Chat Hut
+# Chat Hut
+A chatting application
