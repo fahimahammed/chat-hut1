@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import '../styles/Sidebar.css';
-import { Avatar } from '@material-ui/core';
+import { Avatar, Button } from '@material-ui/core';
 import {
   Add,
   Call,
@@ -14,6 +14,8 @@ import {
 } from '@material-ui/icons';
 
 import SidebarChannel from '../components/SidebarChannel';
+
+import ForumIcon from '@material-ui/icons/Forum';
 
 import db, { auth } from '../app/firebase';
 import { selectUser } from '../slice/userSlice';
@@ -46,6 +48,10 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="sidebar-top">
+      <img
+          src="https://images.vexels.com/media/users/3/139911/isolated/preview/1afb4038427b2bd8edd275940aea269d-chat-service-icon-by-vexels.png"
+          alt=""
+        />
         <h3>Chat Hut</h3>
         <ExpandMore className="sidebar-expandMoreIcon" />
       </div>
@@ -53,8 +59,8 @@ const Sidebar = () => {
       <div className="sidebar-channels">
         <div className="sidebar-channelsHeader">
           <div className="sidebar-header">
-            <ExpandMore className="sidebar-expandMoreIcon" />
-            <h4>Text Channels</h4>
+            <ForumIcon className="sidebar-expandMoreIcon" />
+            <h3>Chat Groups</h3>
           </div>
 
           <Add onClick={handleAddChannel} className="sidebar-addChannelIcon" />
@@ -86,18 +92,21 @@ const Sidebar = () => {
       </div> */}
 
       <div className="sidebar-profile">
-        <Avatar onClick={() => auth.signOut()} src={user.photo} />
+        <Avatar src={user.photo} />
         <div className="sidebar-profileInfo">
           <h3>{user.displayName}</h3>
           {/* <p>#{user.uid.substring(0, 5)}</p> */}
-          <p>User</p>
         </div>
+      </div>
 
-        <div className="sidebar-profileIcons">
+      <div className="sidebar-profileIcons">
           <Mic />
           <Headset />
           <Settings />
         </div>
+
+      <div className="sign-out">
+            <Button className='sign-out-button' onClick={() => auth.signOut()}>Sign Out</Button>
       </div>
     </div>
   );

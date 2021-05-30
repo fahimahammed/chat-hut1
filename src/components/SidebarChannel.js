@@ -4,6 +4,8 @@ import '../styles/SidebarChannel.css';
 
 import { setChannelInfo } from '../slice/appSlice';
 
+import ChatIcon from '@material-ui/icons/Chat';
+
 const SidebarChannel = ({ id, channelName }) => {
   const dispatch = useDispatch();
 
@@ -13,14 +15,16 @@ const SidebarChannel = ({ id, channelName }) => {
       onClick={() =>
         dispatch(
           setChannelInfo({
-            channelId id,
+            channelId: id,
             channelName,
           })
         )
       }
     >
       <h4>
-        <span className="sidebarChannel-hash">#</span>
+        <span className="sidebarChannel-hash">
+          <ChatIcon />
+        </span>
         {channelName}
       </h4>
     </div>

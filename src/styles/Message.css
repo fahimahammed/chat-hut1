@@ -2,12 +2,12 @@
   display: flex;
   align-items: center;
   padding-left: 20px;
-  color: rgb(8, 8, 8);
-  
+  color: #e65d0e;
+  font-family: 'Varela Round', sans-serif;
 }
 
 .message-style{
-  background-color: rgb(54, 53, 59);
+  background-color: #e65d0e;
   padding: 1rem;
   border-radius: 10px;
   color: white;

@@ -7,35 +7,35 @@
   background-color: #738aa0;
 }
 
-.chatHeader__hash {
+.chatHeader-hash {
   color: rgb(10, 10, 10);
   font-size: 30px;
   padding: 10px;
 }
 
-.chatHeader__left > h3 {
+.chatHeader-left > h3 {
   display: flex;
   align-items: center;
   color: rgb(17, 15, 15);
 }
 
-.chatHeader__right {
+.chatHeader-right {
   display: flex;
   align-items: center;
   flex: 0.5;
   justify-content: space-between;
 }
 
-.chatHeader__right > .MuiSvgIcon-root {
+.chatHeader-right > .MuiSvgIcon-root {
   padding: 5px;
   cursor: pointer;
 }
 
-.chatHeader__right > .MuiSvgIcon-root:hover {
+.chatHeader-right > .MuiSvgIcon-root:hover {
   color: #4fb185;
 }
 
-.chatHeader__search {
+.chatHeader-search {
   display: flex;
   align-items: center;
   color: gray;
@@ -44,7 +44,7 @@
   padding: 3px;
 }
 
-.chatHeader__search > input {
+.chatHeader-search > input {
   background: transparent;
   outline-width: 0;
   color: white;

@@ -7,12 +7,12 @@
   
 }
 
-.chat__messages {
+.chat-messages {
   flex: 1;
   overflow: scroll;
 }
 
-.chat__input {
+.chat-input {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,24 +24,24 @@
   background-color: #474b53;
 }
 
-.chat__input > form > input {
+.chat-input > form > input {
   padding: 15px;
   background: transparent;
   border: none;
   outline-width: 0;
   color: rgb(243, 241, 241);
   font-size: large;
-  width: 100%;
+  width: 95%;
 }
 
-.chat__input > form {
+.chat-input > form {
   flex: 1;
 }
 
-.chat__inputButton {
+.chat-inputButton {
   display: none;
 }
 
-.chat__inputIcons > .MuiSvgIcon-root {
+.chat-inputIcons > .MuiSvgIcon-root {
   padding: 5px;
 }

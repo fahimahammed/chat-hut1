@@ -9,11 +9,33 @@
 .sidebar-top {
   display: flex;
   justify-content: space-between;
+  font-weight: 800;
+  font-size: large;
   align-items: center;
   padding: 18px;
-  background-color: #959dad;
+  background-color: #727783;
   color: rgb(5, 27, 2);
   border-bottom: 3px solid #595b5d;
+}
+
+.sidebar-top > img {
+  width: 20%;
+}
+
+.sign-out{
+  text-align: center;
+  padding-bottom: 5px;
+}
+.sign-out > button{
+  width: 90%;
+  background-color: #e45d0f;
+  color: #eff2f5;
+  font-weight: 800;
+}
+
+.sign-out > button:hover {
+  background-color: #eff2f5;
+  color: #e65d0e;
 }
 
 .sidebar-channels {
@@ -22,6 +44,7 @@
 
 .sidebar-expandMoreIcon {
   cursor: pointer;
+  padding-right: 5px;
 }
 
 .sidebar-expandMoreIcon:hover {
@@ -56,8 +79,11 @@
   align-items: center;
   color: rgb(66, 65, 65);
   background-color: #959dad;
-  padding: 10px;
   border-top: 1px solid gray;
+}
+
+.sidebar-profileIcons{
+  text-align: center;
 }
 
 .sidebar-voiceInfo, .sidebar-profileInfo {

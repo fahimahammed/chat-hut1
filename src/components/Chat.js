@@ -26,7 +26,7 @@ const Chat = () => {
   useEffect(() => {
     if (channelId) {
       db.collection('channels')
-        doc(channelId)
+        .doc(channelId)
         .collection('messages')
         .orderBy('timestamp', 'desc')
         .onSnapshot((snapshot) => {
@@ -51,7 +51,7 @@ const Chat = () => {
     <div className="chat">
       <ChatHeader channelName={channelName} /> 
 
-      <div className="chat__messages">
+      <div className="chat-messages">
         {messages.map((message, index) => (
           <Message
             key={index}
@@ -61,7 +61,7 @@ const Chat = () => {
           />
         ))}
       </div>
-      <div className="chat__input">
+      <div className="chat-input">
         <AddCircle fontSize="large" />
         <form>
           <input
@@ -76,7 +76,7 @@ const Chat = () => {
             value={messageInput}
           />
           <button
-            className="chat__inputButton"
+            className="chat-inputButton"
             onClick={sendMessage}
             type="submit"
           >
@@ -84,7 +84,7 @@ const Chat = () => {
           </button>
         </form>
 
-        <div className="chat__inputIcons">
+        <div className="chat-inputIcons">
           <CardGiftcard />
           <Gif />
           <EmojiEmotions />
