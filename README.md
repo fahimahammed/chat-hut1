@@ -8,8 +8,11 @@ React.js, Redux, Material-UI, Firebase, JavaScript
 
 ### Instalation Guide: 
 npx create-react-app chat-hut1 --template redux
+
 npm install @material-ui/core
+
 npm install @material-ui/icons
+
 npm install firebase
 
 #### Live Site: https://chat-hut1.web.app/
