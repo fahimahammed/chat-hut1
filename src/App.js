@@ -10,7 +10,7 @@ import { auth } from './app/firebase';
 import { login, logout, selectUser } from './slice/userSlice';
 
 function App() {
-  const dispatch = useDisptch();
+  const dispatch = useDispatch();
   const user = useSelector(selectUser);
 
   useEffect(() => {
