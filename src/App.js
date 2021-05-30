@@ -17,7 +17,7 @@ function App() {
     auth.onAuthStateChanged((authUser) => {
       if (authUser) {
         dispatch(
-          login({
+          login=({
             uid: authUser.uid,
             photo: authUser.photoURL,
             email: authUser.email,
