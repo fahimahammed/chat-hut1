@@ -1,0 +1,24 @@
+.message {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  color: #e65d0e;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.message-style{
+  background-color: #e65d0e;
+  padding: 1rem;
+  border-radius: 10px;
+  color: white;
+}
+
+.message-info {
+  margin-left: 20px;
+}
+
+.message-timestamp {
+  color: gray;
+  margin-left: 20px;
+  font-size: x-small;
+}

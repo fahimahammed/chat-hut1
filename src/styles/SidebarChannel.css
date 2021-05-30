@@ -1,18 +1,18 @@
 .sidebarChannel:hover > h4 {
-    color: rgb(15, 13, 13);
-    background-color: #83878a;
-  }
-  
-  .sidebarChannel > h4 {
-    display: flex;
-    padding-left: 15px;
-    align-items: center;
-    background-color: #8393b3;
-    color: rgb(49, 17, 17);
-    cursor: pointer;
-  }
-  
-  .sidebarChannel-hash {
-    font-size: 30px;
-    padding: 0.8rem;
-  }
+  color: rgb(15, 13, 13);
+  background-color: #83878a;
+}
+
+.sidebarChannel > h4 {
+  display: flex;
+  padding-left: 15px;
+  align-items: center;
+  background-color: #8393b3;
+  color: rgb(49, 17, 17);
+  cursor: pointer;
+}
+
+.sidebarChannel-hash {
+  font-size: 30px;
+  padding: 0.8rem;
+}
